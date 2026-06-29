@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setup Profile - PlayNext</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <nav>
+        <span class="brand"><span class="play">Lets</span>Play</span>
+    <div class="main-menu">
+        <span class="menuBtn" onclick="OpenMenu()">&#9776</span>
+        <span class="closeBtn" onclick="CloseMenu()">&#9747</span>
+        <ul id="menu">
+            <li><a href="index.html ">Home</a></li>
+            <li><a href="register.html">Setup Profile</a></li>
+            <li><a href="search.html">Find Partner</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+    </div>
+   </nav>
+
+    <div class="container" style="max-width: 600px;">
+        <div class="card">
+            <h2>Create Your <span class="colour">Player Profile</span></h2>
+            <p style="color: var(--gray); margin-bottom: 1.5rem;">Share your preference with others to enjoy sports.</p>
+            
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="Enter Your Full Name" required>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" class="form-control" placeholder="Enter Your E-mail" required>
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" class="form-control" placeholder="Enter Your Password" required>
+                </div>
+                <div class="form-group">
+                    <label for="game">Preferred Game</label>
+                    <select id="game" class="form-control">
+                        <option value="choose">Choose Your Game</option>
+                        <option value="Chess">Chess</option>
+                        <option value="Carrom">Carrom</option>
+                        <option value="Badminton">Badminton</option>
+                        <option value="Cards">Cards</option>
+                        <option value="Padel">Padel</option>
+                        <option value="Squash">Squash</option>
+                        <option value="Table Tennis">Table Tennis</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="level">Skill Level</label>
+                    <select id="level" class="form-control">
+                        <option value="choose">Choose Your Skill Level</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="location">Preferred Location Venue</label>
+                    <select id="location" class="form-control">
+                        <option value="choose">Choose Your Venue</option>
+                        <option value="Society Clubhouse">Society Clubhouse</option>
+                        <option value="Local Ground / Park">Local Ground / Park</option>
+                        <option value="Home Space">Home / Inside Complex</option>
+                        <option value="Particular Court">Particular Court</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="availability">Availability Window</label>
+                    <select id="availability" class="form-control">
+                        <option value="time">Choose Timing</option>
+                        <option value="Morning">Mornings (6 AM - 9 AM)</option>
+                        <option value="Evening">Evenings (5 PM - 8 PM)</option>
+                        <option value="Weekend">Weekends Only</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Save and Explore Matchmaking</button>
+            </form>
+        </div>
+    </div>
+     <!-- Footer Section -->
+        <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand-column">
+                <a href="index.html" class="brand">LetsPlay</a>
+                <p class="footer-tagline">Building stronger neighbourhood, one game at a time. Match with nearby players effortlessly.</p>
+            </div>
+            
+            <div class="container footer-bottom-flex">
+                <p>&copy; 2026 LetsPlay.Register and Play.</p>
+                <p>E-mail: letsplay@gmail.com</p>
+                <p>Contact: 9978863083</p>
+            </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
