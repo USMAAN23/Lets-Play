@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Console - PlayNext</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <nav>
+        <span class="brand" ><span class="play">Lets</span>Play</span>
+    <div class="main-menu">
+         <span class="menuBtn" onclick="OpenMenu()">&#9776</span>
+        <span class="closeBtn" onclick="CloseMenu()">&#9747</span>
+        <ul id="menu">
+            <li><a href="index.html ">View Site</a></li>
+        </ul>
+    </div>
+   </nav>
+
+    <div class="container">
+        <h2>Platform Key Performance</h2>
+        <p style="color: var(--gray); margin-bottom: 2rem;">Real-time ecosystem analytics monitoring active matchmaking operations.</p>
+        
+        <div class="grid">
+            <div class="card" style="text-align: center;">
+                <h1 id="statTotalUsers" style="font-size: 2.5rem; color: var(--primary);">0</h1>
+                <p style="color: var(--gray)">Total Registered Players</p>
+            </div>
+            <div class="card" style="text-align: center;">
+                <h1 id="statActiveReqs" style="font-size: 2.5rem; color: var(--secondary);">0</h1>
+                <p style="color: var(--gray)">Active Play Requests Filed</p>
+            </div>
+            <div class="card" style="text-align: center;">
+                <h1 id="statSuccessRate" style="font-size: 2.5rem; color: #8b5cf6;">0%</h1>
+                <p style="color: var(--gray)">Successful Match Conversion Rate</p>
+            </div>
+        </div>
+    </div>
+     <!--Footer Section -->
+        <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand-column">
+                <a href="index.html" class="brand">LetsPlay</a>
+                <p class="footer-tagline">Building stronger neighbourhood, one game at a time. Match with nearby players effortlessly.</p>
+            </div>
+            
+            <div class="container footer-bottom-flex">
+                <p>&copy; 2026 LetsPlay.Register and Play.</p>
+                <p>E-mail: letsplay@gmail.com</p>
+                <p>Contact: 9978863083</p>
+            </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
