@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Dashboard - PlayNext</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+     <nav>
+        <span class="brand"><span class="play">Lets</span>Play</span>
+    <div class="main-menu">
+         <span class="menuBtn" onclick="OpenMenu()">&#9776</span>
+        <span class="closeBtn" onclick="CloseMenu()">&#9747</span>
+        <ul id="menu">
+            <li><a href="index.html ">Home</a></li>
+            <li><a href="register.html">Setup Profile</a></li>
+            <li><a href="search.html">Find Partner</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+    </div>
+   </nav>
+
+    <div class="container slide-up">
+   
+        <div class="card" style="background: var(--primary); color: var(--white); margin-bottom: 2.5rem; position: relative; overflow: hidden;">
+            <div style="position: relative; z-index: 2;">
+                <h2 style="margin-bottom: 0.5rem; font-size: 2rem;">Hello, <span id="welcomeName">Player</span>! 👋</h2>
+                <p style="opacity: 0.9; max-width: 600px;">Welcome to your personal match command center. Accept or decline incoming local game invitations down below.</p>
+            </div>
+         
+            <div style="position: absolute; right: -30px; bottom: -30px; font-size: 8rem; opacity: 0.15; user-select: none; pointer-events: none;">🏆</div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+            <h2 style="font-weight: 700; color: var(--dark); margin: 0;">Match Dashboard Panel</h2>
+            <button class="btn" onclick="clearRequestHistory()" style="background: #ef4444; color: var(--white); padding: 0.6rem 1.2rem; font-size: 0.85rem; border-radius: 8px; font-weight: 600; cursor: pointer; border: none; display: flex; align-items: center; gap: 0.5rem;">
+                🗑️ Clear History
+            </button>
+        </div>
+        
+        <div id="requestsContainer" class="grid">
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+       <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand-column">
+                <a href="index.html" class="brand">LetsPlay</a>
+                <p class="footer-tagline">Building stronger neighbourhood, one game at a time. Match with nearby players effortlessly.</p>
+            </div>
+            
+            <div class="container footer-bottom-flex">
+                <p>&copy; 2026 LetsPlay.Register and Play.</p>
+                <p>E-mail: letsplay@gmail.com</p>
+                <p>Contact: 9978863083</p>
+            </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
