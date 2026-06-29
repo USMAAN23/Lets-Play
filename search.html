@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Game Partners - PlayNext</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <nav>
+        <span class="brand"><span class="play">Lets</span>Play</span>
+    <div class="main-menu">
+       <span class="menuBtn" onclick="OpenMenu()">&#9776</span>
+        <span class="closeBtn" onclick="CloseMenu()">&#9747</span>
+        <ul id="menu">
+            <li><a href="index.html ">Home</a></li>
+            <li><a href="register.html">Setup Profile</a></li>
+            <li><a href="search.html">Find Partner</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+    </div>
+   </nav>
+
+    <div class="container">
+        <h2>Discover <span class="colour">Nearby Players</span></h2>
+        <div class="card" style="margin-top: 1rem;">
+            <form id="searchForm" class="grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); align-items: flex-end;">
+                <div class="form-group" style="margin-bottom:0;">
+                    <label for="searchGame">Filter by Game Type</label>
+                    <select id="searchGame" class="form-control">
+                        <option value="All">All Games</option>
+                        <option value="Chess">Chess</option>
+                        <option value="Table Tennis">Table Tennis</option>
+                        <option value="Padel">Padel</option>
+                        <option value="Squash">Squash</option>
+                        <option value="Carrom">Carrom</option>
+                        <option value="Badminton">Badminton</option>
+                        <option value="Cards">Cards</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Apply Filtering Engine</button>
+            </form>
+        </div>
+
+        <h3 style="margin-bottom: 1rem;">Active Local Players Available Now</h3>
+        <div id="searchResults" class="grid">
+            </div>
+    </div>
+     <!-- Footer Section -->
+       <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand-column">
+                <a href="index.html" class="brand">LetsPlay</a>
+                <p class="footer-tagline">Building stronger neighbourhood, one game at a time. Match with nearby players effortlessly.</p>
+            </div>
+            
+            <div class="container footer-bottom-flex">
+                <p>&copy; 2026 LetsPlay.Register and Play.</p>
+                <p>E-mail: letsplay@gmail.com</p>
+                <p>Contact: 9978863083</p>
+            </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
